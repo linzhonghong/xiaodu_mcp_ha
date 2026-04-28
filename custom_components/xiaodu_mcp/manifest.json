@@ -1,0 +1,12 @@
+{
+  "domain": "xiaodu_mcp",
+  "name": "Xiaodu MCP",
+  "codeowners": ["@linzhonghong"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/linzhonghong/xiaodu_mcp_ha",
+  "issue_tracker": "https://github.com/linzhonghong/xiaodu_mcp_ha/issues",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "0.2.1"
+}
