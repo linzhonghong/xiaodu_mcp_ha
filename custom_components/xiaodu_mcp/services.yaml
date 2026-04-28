@@ -1,0 +1,67 @@
+speak:
+  name: 小度播报
+  description: 让指定小度设备播报一段文本。
+  target:
+    entity:
+      integration: xiaodu_mcp
+    device:
+      integration: xiaodu_mcp
+  fields:
+    text:
+      required: true
+      selector:
+        text:
+          multiline: true
+    device:
+      required: false
+      selector:
+        text:
+    device_key:
+      required: false
+      selector:
+        text:
+
+command:
+  name: 小度自然语言指令
+  description: 向指定小度设备发送自然语言指令。
+  target:
+    entity:
+      integration: xiaodu_mcp
+    device:
+      integration: xiaodu_mcp
+  fields:
+    command:
+      required: true
+      selector:
+        text:
+          multiline: true
+    device:
+      required: false
+      selector:
+        text:
+    device_key:
+      required: false
+      selector:
+        text:
+
+take_photo:
+  name: 小度拍照
+  description: 触发指定小度设备拍照，并更新“最近拍照”camera 实体。
+  target:
+    entity:
+      integration: xiaodu_mcp
+    device:
+      integration: xiaodu_mcp
+  fields:
+    device:
+      required: false
+      selector:
+        text:
+    device_key:
+      required: false
+      selector:
+        text:
+
+refresh_devices:
+  name: 刷新小度设备
+  description: 重新从 token-proxy 获取小度设备列表。
