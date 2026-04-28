@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Xiaodu MCP",
+        "description": "输入 xiaodu-token-proxy 的根地址，不要带 /sse 或 /mcp/。例如：http://192.168.1.20:8088",
+        "data": {
+          "base_url": "token-proxy 根地址"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接 token-proxy，或 /api/devices 返回异常。"
+    }
+  }
+}
